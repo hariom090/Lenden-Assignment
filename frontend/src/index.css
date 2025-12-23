@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* Common container */
+.container {
+  width: 380px;
+  margin: 80px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form elements */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  background-color: #004f99;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Error message */
+.error {
+  color: #d93025;
+  background-color: #fdecea;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Dashboard */
+.dashboard-info p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  background-color: #d93025;
+}
+
+.logout-btn:hover {
+  background-color: #b3261e;
+}
