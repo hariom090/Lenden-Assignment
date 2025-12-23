@@ -41,7 +41,7 @@ function Login() {
         <button type="submit">Login</button>
       </form>
 
-      <p>
+      <p className='text-p'>
         New user? <Link to="/register">Register</Link>
       </p>
     </div>

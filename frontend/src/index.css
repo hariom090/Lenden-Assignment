@@ -5,21 +5,30 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Body always centers content */
 body {
   background-color: #f4f6f8;
   min-height: 100vh;
+
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+
+  padding: 16px;
 }
 
-/* Common container */
+/* Main container */
 .container {
-  width: 380px;
-  margin: 80px auto;
+  width: 100%;
+  max-width: 380px;
   padding: 25px;
+
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading */
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -29,11 +38,11 @@ h2 {
 /* Form elements */
 input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 input:focus {
@@ -44,12 +53,12 @@ input:focus {
 /* Buttons */
 button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: #0066cc;
   color: white;
   border: none;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -73,7 +82,7 @@ a:hover {
 .error {
   color: #d93025;
   background-color: #fdecea;
-  padding: 8px;
+  padding: 10px;
   border-radius: 4px;
   margin-bottom: 12px;
   font-size: 14px;
@@ -94,4 +103,82 @@ a:hover {
 
 .logout-btn:hover {
   background-color: #b3261e;
+}
+
+.text-p {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.container > p{
+  padding-bottom: 10px;
+}
+
+/* ===============================
+   Aadhaar Display (Final)
+   =============================== */
+
+.aadhaar-wrapper {
+  position: relative;
+  
+
+}
+
+.aadhaar-wrapper p {
+  margin: 0;
+  font-size: 15px;
+
+  padding-right: 32px;
+  min-height: 22px;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+/* Eye toggle icon */
+.aadhaar-toggle {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  cursor: pointer;
+  color: #555;
+}
+
+.aadhaar-toggle:hover {
+  color: #0066cc;
+}
+
+.aadhaar-toggle.open {
+  color: #0066cc;
+}
+
+
+
+/* ===============================
+   Responsive Media Queries
+   (DO NOT break centering)
+   =============================== */
+
+/* Tablets & small laptops */
+@media (max-width: 768px) {
+  .container {
+    padding: 22px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+  }
 }
